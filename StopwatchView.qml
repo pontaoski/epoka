@@ -7,8 +7,12 @@ import QtGraphicalEffects 1.13
 
 Item {
     id: root
+    clip: true
     property bool running: false
     property var times: []
+    Kirigami.Theme.colorSet: Kirigami.Theme.View
+
+    Rectangle { anchors.fill: parent; color: Kirigami.Theme.backgroundColor }
 
     Item {
         width: root.height * (2/3)
