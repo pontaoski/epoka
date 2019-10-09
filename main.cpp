@@ -1,6 +1,20 @@
-#include <QGuiApplication>
 #include <QQmlApplicationEngine>
+
+#ifdef Q_OS_ANDROID
+#include <QGuiApplication>
+#include <QIcon>
+#include "mauiandroid.h"
+#else
 #include <QApplication>
+#endif
+
+#ifdef STATIC_KIRIGAMI
+#include "3rdparty/kirigami/src/kirigamiplugin.h"
+#endif
+
+#ifdef STATIC_MAUIKIT
+#include "3rdparty/mauikit/src/mauikit.h"
+#endif
 
 void messageOutput(QtMsgType type, const QMessageLogContext &context, const QString &msg)
 {
@@ -31,7 +45,25 @@ int main(int argc, char *argv[])
     qInstallMessageHandler(messageOutput);
     QCoreApplication::setAttribute(Qt::AA_EnableHighDpiScaling);
 
+#ifdef Q_OS_ANDROID
+    QGuiApplication app(argc, argv);
+#else
     QApplication app(argc, argv);
+#endif
+
+    app.setApplicationName("Epoka");
+    app.setApplicationVersion("1.0.0");
+    app.setApplicationDisplayName("Epoka");
+    app.setOrganizationName("KDE Maui");
+    app.setOrganizationDomain("org.maui.epoka");
+
+#ifdef STATIC_KIRIGAMI
+    KirigamiPlugin::getInstance().registerTypes();
+#endif
+
+#ifdef STATIC_MAUIKIT
+    MauiKit::getInstance().registerTypes();
+#endif
 
     QQmlApplicationEngine engine;
     const QUrl url(QStringLiteral("qrc:/main.qml"));
