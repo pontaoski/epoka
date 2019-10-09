@@ -17,7 +17,7 @@ Maui.ApplicationWindow {
     Maui.App.iconName: "clock-large"
 
     headBar.middleContent: Kirigami.ActionToolBar {
-        display: root.isWide ? ToolButton.TextBesideIcon : ToolButton.IconOnly
+        display: root.isWide ? ToolButton.TextBesideIcon : ToolButton.TextUnderIcon
         position: ToolBar.Header
         actions: [
             Kirigami.Action {

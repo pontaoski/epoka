@@ -27,7 +27,7 @@ include(ECMAddAppIcon)
 if(ANDROID)
     add_library(epoka SHARED main.cpp qml.qrc)
 else()
-    add_executable(epoka main.cpp qml.qrc)
+    add_executable(epoka src/main.cpp qrc/qml.qrc)
 endif()
 
 target_compile_definitions(epoka
