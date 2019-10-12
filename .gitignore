@@ -1,2 +1,4 @@
 build
+_build
 CMakeLists.txt.user
+*.pro.user

@@ -1,0 +1,6 @@
+[submodule "3rdparty/kirigami"]
+	path = 3rdparty/kirigami
+	url = git://anongit.kde.org/kirigami.git
+[submodule "3rdparty/mauikit"]
+	path = 3rdparty/mauikit
+	url = https://invent.kde.org/kde/mauikit.git
