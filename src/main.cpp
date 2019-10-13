@@ -3,7 +3,6 @@
 #ifdef Q_OS_ANDROID
 #include <QGuiApplication>
 #include <QIcon>
-#include "mauiandroid.h"
 #else
 #include <QApplication>
 #endif
