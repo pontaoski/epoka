@@ -4,3 +4,6 @@
 [submodule "3rdparty/mauikit"]
 	path = 3rdparty/mauikit
 	url = https://invent.kde.org/kde/mauikit.git
+[submodule "3rdparty/breeze-icons"]
+	path = 3rdparty/breeze-icons
+	url = https://github.com/KDE/breeze-icons.git
