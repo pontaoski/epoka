@@ -11,7 +11,6 @@ Maui.ApplicationWindow {
     width: 640
     height: 480
     title: qsTr("Epoka")
-    showAccounts: false
     rightIcon.visible: false
 
     Maui.App.iconName: "clock-large"
