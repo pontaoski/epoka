@@ -288,7 +288,8 @@ Rectangle {
                                 root.timezones = []
                                 return
                             }
-                            root.timezones = root.timezones.splice(index, 1)
+                            root.timezones.splice(index, 1)
+                            root.timezonesChanged()
                         }
                     }
 
@@ -298,6 +299,7 @@ Rectangle {
     }
 
     RoundButton {
+        z: 9999
         id: rund
         icon.name: "list-add"
         anchors.horizontalCenter: parent.horizontalCenter
