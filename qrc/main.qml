@@ -15,8 +15,10 @@ Maui.ApplicationWindow {
 
     Maui.App.iconName: "clock-large"
 
+    // ClockIcon {}
+
     headBar.middleContent: Kirigami.ActionToolBar {
-        display: root.isWide ? ToolButton.TextBesideIcon : ToolButton.TextUnderIcon
+        display: root.isWide ? ToolButton.TextBesideIcon : ToolButton.IconOnly
         position: ToolBar.Header
         actions: [
             Kirigami.Action {
@@ -32,6 +34,13 @@ Maui.ApplicationWindow {
                 checkable: true
                 checked: swipey.currentIndex == 1
                 onTriggered: { swipey.currentIndex = 1 }
+            },
+            Kirigami.Action {
+                iconName: "clock"
+                text: "World Clocks"
+                checkable: true
+                checked: swipey.currentIndex == 2
+                onTriggered: { swipey.currentIndex = 2 }
             }
         ]
     }
@@ -40,5 +49,6 @@ Maui.ApplicationWindow {
         anchors.fill: parent
         StopwatchView {}
         TimerView {}
+        WorldClocksView {}
     }
 }

@@ -14,6 +14,8 @@
 #ifdef STATIC_MAUIKIT
 #include "3rdparty/mauikit/src/mauikit.h"
 #endif
+#include "windowiconiser.h"
+#include "customwindow.h"
 
 void messageOutput(QtMsgType type, const QMessageLogContext &context, const QString &msg)
 {
@@ -63,6 +65,15 @@ int main(int argc, char *argv[])
 #ifdef STATIC_MAUIKIT
     MauiKit::getInstance().registerTypes();
 #endif
+
+    qmlRegisterSingletonType<WindowIconiser>("org.maui.epoka", 1, 0, "IconSetter", [](QQmlEngine *engine, QJSEngine *scriptEngine) -> QObject * {
+        Q_UNUSED(engine)
+        Q_UNUSED(scriptEngine)
+
+        WindowIconiser *obj = new WindowIconiser();
+        return obj;
+    });
+    qmlRegisterType<QQuickWindow>();
 
     QQmlApplicationEngine engine;
     const QUrl url(QStringLiteral("qrc:/main.qml"));

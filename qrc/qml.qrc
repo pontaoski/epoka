@@ -4,5 +4,7 @@
         <file>StopwatchView.qml</file>
         <file>Stopwatch.qml</file>
         <file>TimerView.qml</file>
+        <file>ClockIcon.qml</file>
+        <file>WorldClocksView.qml</file>
     </qresource>
 </RCC>

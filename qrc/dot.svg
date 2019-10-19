@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="48"
+   height="48"
+   viewBox="0 0 12.7 12.7"
+   version="1.1"
+   id="svg8"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
+   sodipodi:docname="dot.svg">
+  <defs
+     id="defs2">
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient1467">
+      <stop
+         style="stop-color:#000000;stop-opacity:0.36651585"
+         offset="0"
+         id="stop1463" />
+      <stop
+         style="stop-color:#000000;stop-opacity:0"
+         offset="1"
+         id="stop1465" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient1467"
+       id="linearGradient1469"
+       x1="6.0854168"
+       y1="6.0854168"
+       x2="9.5249996"
+       y2="9.5249996"
+       gradientUnits="userSpaceOnUse" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="11.313709"
+     inkscape:cx="15.939162"
+     inkscape:cy="30.024598"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer3"
+     showgrid="true"
+     inkscape:window-width="1920"
+     inkscape:window-height="985"
+     inkscape:window-x="1280"
+     inkscape:window-y="36"
+     inkscape:window-maximized="1"
+     units="px"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     inkscape:snap-bbox="true"
+     inkscape:bbox-nodes="true"
+     inkscape:snap-bbox-edge-midpoints="true"
+     inkscape:snap-bbox-midpoints="true"
+     inkscape:object-paths="true"
+     inkscape:snap-object-midpoints="true"
+     inkscape:snap-center="true">
+    <inkscape:grid
+       type="xygrid"
+       id="grid1385"
+       empspacing="4" />
+    <sodipodi:guide
+       position="1.0583333,11.641667"
+       orientation="0,1"
+       id="guide1408"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="1.0583333,11.641667"
+       orientation="1,0"
+       id="guide1410"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="1.0583333,1.0583333"
+       orientation="0,1"
+       id="guide1412"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="11.641667,1.0583333"
+       orientation="1,0"
+       id="guide1414"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="11.641667,11.641667"
+       orientation="0,1"
+       id="guide1416"
+       inkscape:locked="false" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="Base" />
+  <g
+     inkscape:groupmode="layer"
+     id="layer5"
+     inkscape:label="Base Hard Shadow" />
+  <g
+     inkscape:groupmode="layer"
+     id="layer3"
+     inkscape:label="45 Shadows">
+    <path
+       style="fill:url(#linearGradient1469);stroke:none;stroke-width:0.26458333;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none;fill-opacity:1"
+       d="M 10.31875,9.5703954 6.7241772,5.9758226 5.9758226,6.7241773 9.525,10.273355 Z"
+       id="path1461"
+       inkscape:connector-curvature="0" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer4"
+     inkscape:label="Hands" />
+  <g
+     inkscape:label="Foreground"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-284.3)"
+     style="display:inline">
+    <circle
+       style="opacity:1;fill:#6eb4d9;fill-opacity:1;stroke:none;stroke-width:0.02645803;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
+       id="path1418-3-6"
+       cx="6.3499999"
+       cy="290.64999"
+       r="0.52916056" />
+  </g>
+</svg>
