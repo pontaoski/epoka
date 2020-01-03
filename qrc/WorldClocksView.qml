@@ -1,8 +1,9 @@
 import QtQuick 2.0
-import org.kde.kirigami 2.5 as Kirigami
+import org.kde.kirigami 2.8 as Kirigami
 import QtQuick.Controls 2.5
 import QtQuick.Layouts 1.12
 import Qt.labs.settings 1.0
+import QtQuick.XmlListModel 2.0
 
 Rectangle {
     clip: true
@@ -314,24 +315,49 @@ Rectangle {
         edge: Qt.BottomEdge
         height: parent.height / 2
         contentItem: ColumnLayout {
-            Kirigami.Heading {
-                Layout.margins: Kirigami.Units.largeSpacing
-                text: "Select a timezone..."
+            RowLayout {
+                Kirigami.Heading {
+                    Layout.margins: Kirigami.Units.largeSpacing
+                    text: "Select a timezone..."
+                }
+                Item { height: 1; Layout.fillWidth: true }
+                Kirigami.SearchField {
+                    id: searchy;
+                    property bool empty: text == ""
+                    inputMethodHints: Qt.ImhNoPredictiveText
+                    onTextChanged: {
+                        citiesModel.reload()
+                    }
+                }
             }
+
             ListView {
                 clip: true
                 Layout.fillHeight: true
                 Layout.fillWidth: true
-                model: root.offsets
+                model: citiesModel
                 delegate: Kirigami.BasicListItem {
-                    label: modelData["name"]
+                    label: name
+                    visible: name != ""
                     onClicked: {
+                        print(root.timezones)
                         root.timezones.push(modelData)
+                        print(root.timezones)
                         root.timezonesChanged()
                         zones.close()
                     }
                 }
             }
+        }
+    }
+    XmlListModel {
+        id: citiesModel
+        source: "qrc:/xml/cities.xml"
+        query: "/cities/city"
+        XmlRole {
+            id: rol
+            name: "name";
+            query: searchy.empty ? "@name/string()" : "@name[contains(.,'%1')]/string()".arg(searchy.text)
         }
     }
 }

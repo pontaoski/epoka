@@ -6,5 +6,6 @@
         <file>TimerView.qml</file>
         <file>ClockIcon.qml</file>
         <file>WorldClocksView.qml</file>
+        <file>AlarmView.qml</file>
     </qresource>
 </RCC>

@@ -41,6 +41,13 @@ Maui.ApplicationWindow {
                 checkable: true
                 checked: swipey.currentIndex == 2
                 onTriggered: { swipey.currentIndex = 2 }
+            },
+            Kirigami.Action {
+                iconName: "clock"
+                text: "Alarms"
+                checkable: true
+                checked: swipey.currentIndex == 3
+                onTriggered: { swipey.currentIndex = 3 }
             }
         ]
     }
@@ -50,5 +57,6 @@ Maui.ApplicationWindow {
         StopwatchView {}
         TimerView {}
         WorldClocksView {}
+        AlarmView {}
     }
 }
